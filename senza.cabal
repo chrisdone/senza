@@ -17,4 +17,5 @@ library
   exposed-modules:   Senza, Senza.Types, Senza.Bootstrap
   build-depends:     base >= 4 && <5,
                      blaze-markup,
-                     blaze-html
+                     blaze-html,
+                     text
