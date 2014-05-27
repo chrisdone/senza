@@ -14,14 +14,14 @@ import           Text.Blaze.Internal (Attributable)
 with :: Attributable a => a -> [Attribute] -> a
 with = foldl' (\el attr -> el ! attr)
 
+docTypeHtml :: Senza -> Senza
+docTypeHtml = E.docTypeHtml
+
 meta :: [E.Attribute] -> Senza
 meta = with E.meta
 
 headtitle :: Senza -> Senza
 headtitle = E.title
-
-style :: [E.Attribute] -> Senza
-style = with E.link
 
 script :: [E.Attribute] -> Senza -> Senza
 script = with E.script
