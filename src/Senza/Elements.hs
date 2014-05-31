@@ -79,3 +79,6 @@ pre = with E.pre
 
 code :: [E.Attribute] -> Senza -> Senza
 code = with E.code
+
+img :: [E.Attribute] -> Senza
+img = with E.img
